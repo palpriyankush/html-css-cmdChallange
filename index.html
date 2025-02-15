@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(0, 0, 0);
+        margin: auto;
+        box-sizing: border-box;
+        font-family: monospace;
+      }
+
+      body {
+        margin: auto;
+        width: 60%;
+      }
+
+      span {
+        text-decoration: none;
+        color: rgb(136, 241, 244);
+        margin-bottom: 10px;
+      }
+      body > * {
+        margin-bottom: 20px;
+      }
+      main > * {
+        width: 100%;
+        margin: auto;
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      header > p {
+        background-color: rgba(60, 60, 60, 0.8);
+        color: aqua;
+      }
+
+      #snail {
+        background-color: rgb(5, 25, 31);
+        border-radius: 10px;
+      }
+
+      #snail-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: rgb(5, 25, 31);
+      }
+
+      #answer {
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
+        background-color: rgb(26, 26, 26);
+        margin: 10px;
+      }
+
+      #answer > p {
+        float: left;
+        background-color: rgb(26, 26, 26);
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      .footer {
+        font-size: 0.8em;
+        position: fixed;
+        height: 50px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #000;
+        text-align: center;
+        color: gray;
+      }
+
+      ul {
+        float: right;
+      }
+      .footer > p > a {
+        color: gray;
+        text-decoration: none;
+      }
+
+      #firstHeading {
+        color: aqua;
+      }
+
+      #secondHeading {
+        display: inline-block;
+      }
+
+      #heading {
+        padding-left: 62%;
+
+        padding-bottom: 30px;
+      }
+
+      li > a > img {
+        height: 32px;
+        width: auto;
+      }
+
+      li {
+        list-style: none;
+        margin-right: 5px;
+        display: inline-block;
+      }
+
+      #secondHeading {
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 300;
+      }
+
+      #start > img {
+        height: 60px;
+      }
+      #question {
+        width: 100%;
+        height: 200px;
+        border: 1.5px solid rgba(53, 121, 152, 1);
+        border-radius: 10px;
+        overflow: scroll;
+      }
+      p {
+        margin: 10px;
+      }
+      .question-box {
+        box-sizing: border-box;
+        margin: auto;
+        padding: 20px;
+        overflow: scroll;
+      }
+      .animal-tag {
+        height: 60px;
+        float: left;
+        object-fit: contain;
+      }
+      .sol-bar {
+        padding: 6px;
+        border-bottom: 1px solid rgba(53, 121, 152, 1);
+      }
+      .sol-bar > p {
+        margin: 0px;
+        display: inline;
+      }
+      #arrow {
+        float: right;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s;
+      }
+    </style>
+    <title>Command Challenge</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <div>
+          <ul>
+            <li>
+              <a href="https://cmdchallenge.com/"
+                ><span>Create a reaction survey in your browser!</span
+                ><img src="./public/cmdchallenge-round.png" alt="icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://oops.cmdchallenge.com/"
+                ><img src="./public/1F92D.png" alt="tree"
+              /></a>
+            </li>
+            <li>
+              <a href="https://12days.cmdchallenge.com/"
+                ><img src="./public/1F40C.png" alt="face"
+              /></a>
+            </li>
+            <li>
+              <a href="https://gitlab.com/jarv/cmdchallenge"
+                ><img src="./public/gitlab.png" alt="gitlab"
+              /></a>
+            </li>
+            <li>
+              <a href="mailto:info@cmdchallenge.com"
+                ><img src="./public/email.png" alt="email"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="start">
+          <img src="./public/cmdchallenge-round.png" alt="icon" />
+          <h2 id="secondHeading">Command Challenge</h2>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div id="snail">
+        <img id="snail-img" src="./public/1F40C.png" alt="" />
+      </div>
+      <div>
+        <section id="question">
+          <div class="sol-bar">
+            <p>View Solutions</p>
+            <p id="arrow">&gt;</p>
+            <div class="question-box">
+              <img
+                class="animal-tag"
+                src="./public/1F40C.png"
+                alt="snail-image"
+              />
+
+              <p>
+                Your first challenge is to print &quot;hello world&quot; on the
+                terminal in a single command.
+              </p>
+              <p>
+                Hint: There are many ways to print text on the command line, one
+                way is with the &quot;echo&quot; command. Try it below and good
+                luck!
+              </p>
+            </div>
+            <div class="question-box">
+              <img
+                class="animal-tag"
+                src="./public/1F40C.png"
+                alt="snail-image"
+              />
+              <div>
+                <p>
+                  Your first challenge is to print &quot;hello world&quot; on
+                  the terminal in a single command.
+                </p>
+                <p>
+                  Hint: There are many ways to print text on the command line,
+                  one way is with the &quot;echo&quot; command. Try it below and
+                  good luck!
+                </p>
+              </div>
+            </div>
+            <div class="question-box">
+              <img
+                class="animal-tag"
+                src="./public/1F40C.png"
+                alt="snail-image"
+              />
+              <div>
+                <p>
+                  Your first challenge is to print &quot;hello world&quot; on
+                  the terminal in a single command.
+                </p>
+                <p>
+                  Hint: There are many ways to print text on the command line,
+                  one way is with the &quot;echo&quot; command. Try it below and
+                  good luck!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="answer">
+        <p style="color: green">(0)></p>
+      </div>
+    </main>
+    <div class="footer">
+      <p>
+        Site built with ♡ using
+        <a href="https://terminal.jcubic.pl/">jquery.terminal</a> /
+        <a href="https://openmoji.org/">Openmoji</a> /
+        <a href="https://golang.org/">Golang</a><br />
+        <a href="https://jarv.org/tags/cmdchallenge/"
+          >Read more about cmdchallenge</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
